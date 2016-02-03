@@ -37,13 +37,15 @@ body {
 /* Top Section */
 
 #headLogo {
-	margin-top: 40px;
-	text-align: center;
+  margin-top: 75px;
+  text-align: center;
+  border-bottom: 2px solid #C49A6C;
+  border-top: 2px solid #C49A6C;
+  margin-bottom: 30px;
 }
 
 #headLogo img {
 	text-align: center;
-	border-bottom: 2px solid #C49A6C;
 	width: 70%;
 	margin: 10px 0;
 }
@@ -100,11 +102,16 @@ body {
 }
 
 #products  img {
+  height: inherit;
+}
+
+#productImage {
 	width: 160px;
 	float: left;
 	height: 160px;
 	margin-top: 10px;
 }
+
 #products {
 	text-align: center;
 	margin: auto;

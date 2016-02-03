@@ -6,7 +6,7 @@
     "gender": "Female",
     "price": 99,
     "stockQuantity": 5,
-    "img": ""
+    "img": "http://g02.a.alicdn.com/kf/HTB1pl.YIFXXXXb0XFXXq6xXFXXXG/New-Celebrity-Designer-Shoes-font-b-Almond-b-font-font-b-Toe-b-font-Patent-Red.jpg"
   },
   {
     "name":"Suede Shoes",
@@ -15,7 +15,7 @@
     "colour": "Blue",
     "price": 42,
     "stockQuantity": 4,
-    "img": ""
+    "img": "http://s3.thisnext.com/media/largest_dimension/1C6FEE8C.jpg"
   },
   {
     "name":"Leather Driver Saddle Loafers",
@@ -24,7 +24,7 @@
     "colour": "Tan",
     "price": 34,
     "stockQuantity": 12,
-    "img": "" 
+    "img": "https://cdnb.lystit.com/photos/b64d-2014/02/06/zara-brown-driving-shoes-with-buckles-product-1-17353998-0-645685286-normal.jpeg" 
   },
   {
     "name":"Flip Flops",
@@ -33,7 +33,7 @@
     "colour": "Red",
     "price": 19,
     "stockQuantity": 6,
-    "img": ""
+    "img": "https://asset3.surfcdn.com/quiksilver-flip-flops-quiksilver-molokai-flip-flops-red-red-black.jpg?w=1200&h=1200&q=80&o=Dwi2NeyEc6NFUFn9KhAPK2P6Vowj&V=yVTv"
   },
   {
     "name":"Flip Flops",
@@ -42,7 +42,7 @@
     "colour": "Blue",
     "price": 19,
     "stockQuantity": 0,
-    "img": ""  
+    "img": "https://asset1.surfcdn.com/havaianas-flip-flops-havaianas-top-mix-flip-flops-navy-blue-grey-white.jpg?w=1200&h=1200&q=80&o=iqafUxWwONaHNdESTDU2pptyscgj&V=Dz9q"  
   },
   {
     "name":"Gold Button Cardigan",
@@ -69,7 +69,7 @@
     "colour": "Grey",
     "price": 49.99,
     "stockQuantity": 9,
-    "img": ""
+    "img": "https://resources.shopstyle.com/sim/1e/85/1e85e819906eea58ea1ec6f18158103f/lyle-and-scott-vintage-mens-fine-stripe-jersey-polo-light-grey-marl.jpg"
   },
   {
     "name":"Fine Stripe Short Sleeve Shirt",
@@ -79,7 +79,7 @@
     "price": 49.99,
     "salePrice": 39.99,
     "stockQuantity": 3,
-    "img": ""  
+    "img": "http://www.cwclothes.com.au/media/catalog/product/cache/1/thumbnail/115x/9df78eab33525d08d6e5fb8d27136e95/p/t/pts11grn-man.jpg"  
   },
   {
     "name":"Sharkskin Waistcoat",
@@ -88,7 +88,7 @@
     "colour": "Charcoal",
     "price": 75,
     "stockQuantity": 2,
-    "img": ""  
+    "img": "http://media.austinreed.com/wcsstore/ExtendedSitesCatalogAssetStore/images/234x274/0108705249_085_1-med.jpg"  
   },
   {
     "name":"Lightweight Patch Pocket Blazer",
@@ -97,7 +97,7 @@
     "colour": "Deer",
     "price": 175.5,
     "stockQuantity": 1,
-    "img": ""  
+    "img": "http://g04.a.alicdn.com/kf/HTB1Jd4GKXXXXXXAXVXXq6xXFXXX1/Lesmart-font-b-Men-s-b-font-Business-Fashion-Casual-Elbow-font-b-Patch-b-font.jpg"  
   },
   {
     "name":"Bird Print Dress",
@@ -106,7 +106,7 @@
     "colour": "Black",
     "price": 270,
     "stockQuantity": 10,
-    "img": ""  
+    "img": "http://houseoffraser.scene7.com/is/image/HOF/I_5051741553817_51_20130114?size=450,600&wid=450&hei=600&qlt=80&op_sharpen=1&ResMode=sharp2&pscan=4"  
   },
   {
     "name":"Mid Twist Cut-Out Dress",
@@ -115,6 +115,6 @@
     "colour": "Pink",
     "price": 540,
     "stockQuantity": 5,
-    "img": ""  
+    "img": "http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=125654260"  
   }
 ]

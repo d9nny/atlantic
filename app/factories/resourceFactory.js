@@ -13,3 +13,5 @@ fashionRetailer.factory('ResourceFactory', ['$http', function($http) {
     },
   }
 }]);
+
+

@@ -39,7 +39,7 @@
     <form>
     	<label for="code">Promo Code:</label>
       <input name="code" type="password" ng-model="basketCtrl.code" >
-      <button ng-click="basketCtrl.checkDiscount(basketCtrl.code); basketCtrl.update()">Check</button>
+      <button class="btn" id="checkoutBtn" ng-click="basketCtrl.checkDiscount(basketCtrl.code); basketCtrl.update()">Check</button>
     </form>
   </div>
 

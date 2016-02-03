@@ -1,9 +1,9 @@
 'use strict';
-
 describe('Controller: PageController', function() {
   beforeEach(module('FashionRetailer'));
 
-  var ctrl,
+  var mockResourceFactory,
+      ctrl,
       item = [ {
           "name":"Gold Button Cardigan",
           "category": "Casual",
@@ -14,17 +14,39 @@ describe('Controller: PageController', function() {
           "img": "https://cdnb.lystit.com/photos/3452-2014/09/12/versace-black-gold-button-cardigan-product-1-23517747-1-790845754-normal.jpeg" 
         }];
 
-  beforeEach(inject(function($controller) {
+  module(function($provide) {
+    $provide.factory('ResourceFactory', function() {
+      this.query = jasmine.createSpy('query').andCallFake(function(string) {
+        if (passPromise) {
+          item = [ {
+            "name":"Gold Button Cardigan",
+            "category": "Casual",
+            "gender": "Female",
+            "colour": "Black",
+            "price": 167,
+            "stockQuantity": 6,
+            "img": "https://cdnb.lystit.com/photos/3452-2014/09/12/versace-black-gold-button-cardigan-product-1-23517747-1-790845754-normal.jpeg" 
+          }];
+          return $q.when(item);
+        }
+        else {
+          return $q.reject('something went wrong');
+        }
+        });
+      return  item;
+    });
+  });
+
+  beforeEach(inject(function($controller, ResourceFactory) {
     ctrl = $controller('PageController');
+    mockResourceFactory = ResourceFactory;
   }));
 
+
   describe('On initialize', function() {
-    // it('assigns cart service to a variables', function() {
-    //   expect(ctrl.shoppingBasketService).toEqual(shoppingBasketService);
-    // });
-    // it('assigns resouce factory to a variables', function() {
-    //   expect(ctrl.resourceFactory).toEqual(ResourceFactory);
-    // });
+    it('assigns resouce factory to a variables', function() {
+      expect(ctrl.resourceFactory).toEqual(mockResourceFactory);
+    });
     it('assigns 0 to variabe basketShow', function() {
       expect(ctrl.basketShow).toEqual(0);
     });
@@ -34,12 +56,6 @@ describe('Controller: PageController', function() {
     it('assigns "Casual" to variabe activeCategory', function() {
       expect(ctrl.activeCategory).toEqual("Casual");
     });
-    // it('sends a request for the products', function() {
-    //   expect(ctrl.featuredProducts).toEqual(products);
-    // });
-    // it('sends a request for the discount codes', function() {
-    //   expect(ctrl.discountCodes).toEqual(discounts);
-    // });
   });
 
   describe('Function: setGender', function() {
