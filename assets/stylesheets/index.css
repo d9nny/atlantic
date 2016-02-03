@@ -152,15 +152,16 @@ body {
 
 /* Basket */
 #basket {
-	background: beige;
+  background: beige;
   width: 390px;
-  right: 3%;
+  right: 2%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border: 1px solid #D7D2B9;
   text-align: center;
   position: fixed;
   z-index: 1030;
+  top: 50px;
 }
 
 #basket h3 {
@@ -169,6 +170,19 @@ body {
   font-family: MS Serif4, New York6, serif;
   font-weight: 100;
   font-size: 30px;
+}
+
+.input-group {
+  width: 90%;
+  margin: auto;
+}
+
+#checkCodeBtn {
+  margin-bottom: 25px;
+  color: #C79D6E;
+  background-color: #403D3D;
+  letter-spacing: 1px;
+  font-family: MS Serif4, New York6, serif;
 }
 
 #checkoutBtn {
@@ -201,6 +215,29 @@ body {
 #basket img {
 	width: 50px;
 }
+
+/* Flash Messages */
+
+#flash-message > p {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: .5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #2AE0CD;
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#flash-message > p {
+  position: fixed;
+  left: 1%;
+  top: 50px;
+  z-index: 1050;
+}
+
+/* Screen Size Settings */
 
 @media screen and (max-width:650px) {
 

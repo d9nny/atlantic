@@ -22,8 +22,11 @@
 		
 		<header ng-include="'app/partials/navbar.html'"></header>
 		
-		<section  ng-show="pageCtrl.basketSelected()" ng-include="'app/partials/basket.html'"></section> 
-
+		<div ng-controller="BasketController as basketCtrl">
+			<div ng-include="'app/partials/flashMessages.html'"></div> 
+			<section  ng-show="pageCtrl.basketSelected()" ng-include="'app/partials/basket.html'"></section> 
+		</div>
+		
 		<section ng-include="'app/partials/topSection.html'"></section>
 
 		<section id="featuredProducts" class="container" ng-include="'app/partials/products.html'"></section>

@@ -1,4 +1,4 @@
-<section id="basket" ng-controller="BasketController as basketCtrl">
+<section id="basket">
 	<h3>Shopping Basket</h3>
 	<div style="height:350px; overflow:auto;">
 		<table class="table table-striped">
@@ -8,47 +8,50 @@
 			<col span="1" style="width: 20%;">
 			<col span="1" style="width: 20%;">
 			<col span="1" style="width: 20%;">
-			</colgroup>
-			<thead>
-				<tr>
-					<th>Item</th>
-					<th>Name</th>
-					<th>Price</th>
-					<th>Quantity</th>
-					<th></th>
-					<th>Total</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="item in basketCtrl.basket" >
-					<td><img ng-src="{{item.img}}"></td>
-					<td>{{ item.name }}- {{ item.colour }}</td>
-					<td>{{ item.price | currency : "£" : symbol : fractionSize }}</td>
-					<td>{{ item.quantity }}</td>
-					<td>
-						<button id="qty" type="button" ng-click="basketCtrl.addOne(item); basketCtrl.update()" class="btn btn-default"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></button>
-						<button id="qty" type="button" ng-click="basketCtrl.minusOne(item); basketCtrl.update()" class="btn btn-default"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
-					</td>
-					<td>{{ (item.quantity * item.price )| currency : "£" : symbol : fractionSize }}</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Item</th>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th></th>
+				<th>Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in basketCtrl.basket" >
+				<td><img ng-src="{{item.img}}"></td>
+				<td>{{ item.name }}- {{ item.colour }}</td>
+				<td>{{ item.price | currency : "£" : symbol : fractionSize }}</td>
+				<td>{{ item.quantity }}</td>
+				<td>
+					<button id="qty" type="button" ng-click="basketCtrl.addOne(item); basketCtrl.update()" class="btn btn-default"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></button>
+					<button id="qty" type="button" ng-click="basketCtrl.minusOne(item); basketCtrl.update()" class="btn btn-default"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+				</td>
+				<td>{{ (item.quantity * item.price )| currency : "£" : symbol : fractionSize }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
-  <div id="discount-code">
-    <form>
-    	<label for="code">Promo Code:</label>
-      <input name="code" type="password" ng-model="basketCtrl.code" >
-      <button class="btn" id="checkoutBtn" ng-click="basketCtrl.checkDiscount(basketCtrl.code); basketCtrl.update()">Check</button>
-    </form>
-  </div>
+<div id="discount-code">
+	<form>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Promo Code" ng-model="basketCtrl.code">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button" id="checkCodeBtn" ng-click="basketCtrl.checkDiscount(basketCtrl.code); basketCtrl.update()">Check</button>
+			</span>
+		</div>
+	</form>
+</div>
 
-	<div id="totals">
-		<p>Total: {{ basketCtrl.basketInfo.price	| currency : "£" : symbol : fractionSize }}</p>
-		<p>Discount: {{ basketCtrl.basketInfo.discount | currency : "£" : symbol : fractionSize }}</p>
-		<p>Total Price: {{ basketCtrl.basketInfo.totalPrice | currency : "£" : symbol : fractionSize }}</p>
+<div id="totals">
+	<p>Total: {{ basketCtrl.basketInfo.price	| currency : "£" : symbol : fractionSize }}</p>
+	<p>Discount: {{ basketCtrl.basketInfo.discount | currency : "£" : symbol : fractionSize }}</p>
+	<p>Total Price: {{ basketCtrl.basketInfo.totalPrice | currency : "£" : symbol : fractionSize }}</p>
 
 
-	</div>
-	<button class="btn" id="checkoutBtn" id='pay'>Checkout</button>
+</div>
+<button class="btn" id="checkoutBtn" id='pay'>Checkout</button>
 </section>
