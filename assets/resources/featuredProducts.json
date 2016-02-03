@@ -1,0 +1,120 @@
+[
+  {
+    "name":"Almond Toe Court Shoes",
+    "category": "Shoes",
+    "colour": "Patent Black",
+    "gender": "Female",
+    "price": 99,
+    "stockQuantity": 5,
+    "img": ""
+  },
+  {
+    "name":"Suede Shoes",
+    "category": "Shoes",
+    "gender": "Female",
+    "colour": "Blue",
+    "price": 42,
+    "stockQuantity": 4,
+    "img": ""
+  },
+  {
+    "name":"Leather Driver Saddle Loafers",
+    "category": "Shoes",
+    "gender": "Male",
+    "colour": "Tan",
+    "price": 34,
+    "stockQuantity": 12,
+    "img": "" 
+  },
+  {
+    "name":"Flip Flops",
+    "category": "Shoes",
+    "gender": "Male",
+    "colour": "Red",
+    "price": 19,
+    "stockQuantity": 6,
+    "img": ""
+  },
+  {
+    "name":"Flip Flops",
+    "category": "Shoes",
+    "gender": "Male",
+    "colour": "Blue",
+    "price": 19,
+    "stockQuantity": 0,
+    "img": ""  
+  },
+  {
+    "name":"Gold Button Cardigan",
+    "category": "Casual",
+    "gender": "Female",
+    "colour": "Black",
+    "price": 167,
+    "stockQuantity": 6,
+    "img": "http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=154165510" 
+  },
+  {
+    "name":"Cotton Shorts",
+    "category": "Casual",
+    "gender": "Female",
+    "colour": "Medium Red",
+    "price": 30,
+    "stockQuantity": 5,
+    "img": "http://www.baubolondon.com/media/catalog/product/cache/1/small_image/220x220/84ffde2ed9b3fbec1afccd823998b7b9/r/e/red-shorts-front-1.jpg"
+  },
+  {
+    "name":"Fine Stripe Short Sleeve Shirt",
+    "category": "Casual",
+    "gender": "Male",
+    "colour": "Grey",
+    "price": 49.99,
+    "stockQuantity": 9,
+    "img": ""
+  },
+  {
+    "name":"Fine Stripe Short Sleeve Shirt",
+    "category": "Casual",
+    "gender": "Male",
+    "colour": "Green",
+    "price": 49.99,
+    "salePrice": 39.99,
+    "stockQuantity": 3,
+    "img": ""  
+  },
+  {
+    "name":"Sharkskin Waistcoat",
+    "category": "Formal",
+    "gender": "Male",
+    "colour": "Charcoal",
+    "price": 75,
+    "stockQuantity": 2,
+    "img": ""  
+  },
+  {
+    "name":"Lightweight Patch Pocket Blazer",
+    "category": "Formal",
+    "gender": "Male",
+    "colour": "Deer",
+    "price": 175.5,
+    "stockQuantity": 1,
+    "img": ""  
+  },
+  {
+    "name":"Bird Print Dress",
+    "category": "Formal",
+    "gender": "Female",
+    "colour": "Black",
+    "price": 270,
+    "stockQuantity": 10,
+    "img": ""  
+  },
+  {
+    "name":"Mid Twist Cut-Out Dress",
+    "category": "Formal",
+    "gender": "Female",
+    "colour": "Pink",
+    "price": 540,
+    "stockQuantity": 5,
+    "img": ""  
+  }
+]

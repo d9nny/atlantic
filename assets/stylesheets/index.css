@@ -1,0 +1,222 @@
+body {
+	color: #616262;
+}
+
+/* Navbar */
+
+.navbar-inverse {
+	background-color: rgba(4, 1, 1, 0.76);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #C79D6E;
+	letter-spacing: 2px;
+	font-family: MS Serif4, New York6, serif;
+	font-weight: 100;
+	font-size: 15px;
+	margin-top: 6px;
+  margin-right: 10px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	border-bottom-width: 0px;
+}
+
+.navbar-brand > img {
+	display: block;
+	height: 40px;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+.navbar-brand{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/* Top Section */
+
+#headLogo {
+	margin-top: 40px;
+	text-align: center;
+}
+
+#headLogo img {
+	text-align: center;
+	border-bottom: 2px solid #C49A6C;
+	width: 70%;
+	margin: 10px 0;
+}
+
+#offer img {
+	max-width: 90%;
+}
+
+#offer {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* Featured Products */
+
+#featuredProducts {
+  background-color: beige;
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 40px;
+}
+
+.nav-pills {
+	margin-top: 10px;
+	width: 632px;
+	margin: auto;
+}
+
+.nav-pills > li {
+	float: left;
+	text-align: center;
+	font-size: 18px;
+	font-family: New York6, serif;
+	letter-spacing: 2px;
+	background-color: rgb(213, 179, 143);
+	border-radius: 3px;
+	margin: 5px 10px;
+}
+
+.nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	color: #616262;
+}
+
+#genderTab > li {
+	margin-top: 20px;
+	width: 300px;
+}
+
+#categoryTab > li {
+	width: 196px;
+}
+
+#products  img {
+	width: 160px;
+	float: left;
+	height: 160px;
+	margin-top: 10px;
+}
+#products {
+	text-align: center;
+	margin: auto;
+	width: 781px;
+}
+
+.productInfo p {
+	margin: 0 0 2px;
+	font-size: 13px;
+}
+
+.productInfo {
+	text-align: left;
+	display: inline-block;
+	width: 160px;
+}
+
+#product {
+	background-color: #ddd;
+	width: 370px;
+	height: 210px;
+	float: left;
+	padding: 10px 0 17px 17px;
+	margin: 10px;
+}
+
+#addBasket {
+	width: 160px;
+	background: #D5B38F;
+	color: #616262;
+	margin-top: 20px;
+}
+
+#featureHead img {
+	width: 50%;
+	margin-top: 20px;
+}
+
+/* Basket */
+#basket {
+	background: beige;
+  width: 390px;
+  right: 3%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #D7D2B9;
+  text-align: center;
+  position: fixed;
+  z-index: 1030;
+}
+
+#basket h3 {
+  color: #C79D6E;
+  letter-spacing: 2px;
+  font-family: MS Serif4, New York6, serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+#checkoutBtn {
+  width: 300px;
+  margin-bottom: 25px;
+  height: 50px;
+  color: #C79D6E;
+  background-color: #403D3D;
+  font-size: 19px;
+  letter-spacing: 5px;
+  font-family: MS Serif4, New York6, serif;
+}
+
+#totals {
+  text-align: right;
+  margin-right: 30px;
+  padding-bottom: 15px;
+}
+
+#basket td {
+ font-size: 10px;
+}
+
+#basket th {
+ font-size: 12px;
+ font-weight: 500;
+ letter-spacing: 2px;
+}
+
+#basket img {
+	width: 50px;
+}
+
+@media screen and (max-width:650px) {
+
+	.nav-pills {
+		width: 332px;
+		margin: auto;
+	}
+	#genderTab > li {
+		width: 150px;
+	}
+	#categoryTab > li {
+		width: 96px;
+	}
+
+}
+
+@media screen and (max-width:970px) {
+	#products {
+    text-align: center;
+    margin: auto;
+    width: 400px;
+	}
+	#product {
+    margin: 10px 0;
+	}
+}

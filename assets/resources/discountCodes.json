@@ -1,0 +1,17 @@
+[
+ {
+ 	"code": "5OFF",
+ 	"discount": 5
+ },
+ {
+ 	"code": "OVER50",
+ 	"discount": 10,
+ 	"spend": 50
+ },
+  {
+ 	"code": "SHOEOVER75",
+ 	"discount": 15,
+ 	"spend": 75,
+ 	"category": "Shoes"
+ }
+]

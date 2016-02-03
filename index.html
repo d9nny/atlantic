@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app='FashionRetailer'>
+	<head>
+		<meta charset="utf-8">
+		<title>Finest Fashion</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/stylesheets/index.css">
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-resource/angular-resource.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script src="app/app.js"></script>
+		<script src="app/controllers/pageController.js"></script>
+		<script src="app/controllers/basketController.js"></script>
+		<script src="app/services/shoppingBasketService.js"></script>
+		<script src="app/factories/resourceFactory.js"></script>
+	</head>
+
+	<body ng-controller="PageController as pageCtrl">
+		
+		<header ng-include="'app/partials/navbar.html'"></header>
+		
+		<section  ng-show="pageCtrl.basketSelected()" ng-include="'app/partials/basket.html'"></section> 
+
+		<section ng-include="'app/partials/topSection.html'"></section>
+
+		<section id="featuredProducts" class="container" ng-include="'app/partials/products.html'"></section>
+
+	</body>
+<html>
