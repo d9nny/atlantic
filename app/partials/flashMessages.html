@@ -1,8 +1,11 @@
 <div>
 	<div id="flash-message" ng-show='basketCtrl.activeFlashMessage(1)'>
+		<button ng-click="basketCtrl.resetFlashMessage()"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
 		<p>Sorry we're out of stock,<br>it should be in soon.</p>
 	</div>
 	<div id="flash-message" ng-show='basketCtrl.activeFlashMessage(2)'>
+		<button ng-click="basketCtrl.resetFlashMessage()"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
 		<p>Sorry we don't recognise your promo <br>code, please try again.</p>
 	</div>
 </div>
+

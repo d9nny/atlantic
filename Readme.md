@@ -1,1 +1,50 @@
-karma start tests/unit/karma.conf.js
+First Fashion
+=============
+
+User Stories
+------------
+
+As a User I can view the products and their category, price and availability
+information.
+
+1. As a User I can add a product to my shopping cart.
+2. As a User I can remove a product from my shopping cart.
+3. As a User I can view the total price for the products in my shopping
+cart.
+4. As a User I can apply a voucher to my shopping cart.
+5. As a User I can view the total price for the products in my shopping cart
+with discounts applied.
+6. As a User I am alerted when I apply an invalid voucher to my shopping
+cart.
+7. As a User I am unable to Out of Stock products to the shopping cart.
+
+My Approach
+-----------
+
+I decided to use AngularJS as it's a front end case study. I developed a one page application with two controllers, one for the page and one for the shopping basket. I created a service for the basket functions and a factory for the http request to the .json files in assets/products. I used partials to build the different elements of the page. For the product images I just referenced a url for images found on the internet. To view the products click on a gender and then click on a category. The page is fully responsive to the media size.
+
+Installation
+------------
+
+Navigate to root directory of the project:
+
+```sh
+$ bower install 
+$ npm install
+```
+To run locally:
+
+```sh
+$ node server.js
+```
+or visit live site hosted on heroku - [**First Fashion**](https://polar-plains-66246.herokuapp.com/).
+
+Testing
+-------
+
+To run unit tests:
+
+```sh
+$ karma start tests/unit/karma.conf.js
+```
+

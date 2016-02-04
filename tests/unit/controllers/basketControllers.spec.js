@@ -96,6 +96,9 @@ describe('Controller: BasketController', function() {
     it("assigns shoppingBasketService's basketInfo to variabe basketInfo", function() {
       expect(ctrl.basketInfo).toEqual(mockShoppingBasketService.basketInfo);
     });
+    it("assigns 0 to variabe flashMessage", function() {
+      expect(ctrl.flashMessage).toEqual(0);
+    });
   });
 
   describe('Function: addItem', function() {
@@ -138,6 +141,22 @@ describe('Controller: BasketController', function() {
 	    ctrl.update();
 	    expect(mockShoppingBasketService.calcTotalPrice).toHaveBeenCalled();
 	  });
+  }); 
+
+  describe('Function: resetFlashMessage', function() {
+     it('resets flashMessage back to 0', function() {
+      ctrl.resetFlashMessage();
+      expect(ctrl.flashMessage).toEqual(0);
+    });
+  }); 
+
+  describe('Function: activeFlashMessage', function() {
+    it('returns true if input value equals flashMessage variabe', function() {
+      expect(ctrl.activeFlashMessage(0)).toEqual(true);
+    });
+    it('returns false if input value does not equal the flashMessage variabe', function() {
+      expect(ctrl.activeFlashMessage(1)).toEqual(false);
+    });
   }); 
 
 });

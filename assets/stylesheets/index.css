@@ -34,6 +34,14 @@ body {
 	padding-bottom: 0px;
 }
 
+#basketIcon {
+	margin-right: 10px;
+}
+
+.glyphicon-shopping-cart:before {
+   color: #C49A6C;
+}
+
 /* Top Section */
 
 #headLogo {
@@ -230,17 +238,24 @@ body {
   border-bottom-right-radius: 8px;
 }
 
-#flash-message > p {
+#flash-message {
   position: fixed;
   left: 1%;
   top: 50px;
   z-index: 1050;
 }
 
+#flash-message button {
+  position: absolute;
+  background-color: #2AE0CD;
+  border: none;
+  right: 0;
+  outline: none;
+}
+
 /* Screen Size Settings */
 
 @media screen and (max-width:650px) {
-
 	.nav-pills {
 		width: 332px;
 		margin: auto;
@@ -251,7 +266,6 @@ body {
 	#categoryTab > li {
 		width: 96px;
 	}
-
 }
 
 @media screen and (max-width:970px) {
@@ -262,5 +276,17 @@ body {
 	}
 	#product {
     margin: 10px 0;
+	}
+}
+
+@media screen and (max-width:767px) {
+	#basketIcon {
+    right: 60px;
+    top: -6px;
+    position: absolute;
+	}
+
+	.glyphicon-shopping-cart {
+		transform: scale(1.4,1.4);
 	}
 }

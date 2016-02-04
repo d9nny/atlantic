@@ -1,6 +1,6 @@
 'use strict';
 
-fashionRetailer.controller('BasketController', ['$http', 'ResourceFactory', 'ShoppingBasketService', '$timeout', function($http, ResourceFactory, ShoppingBasketService, $timeout) {
+fashionRetailer.controller('BasketController', ['$http', 'ResourceFactory', 'ShoppingBasketService', function($http, ResourceFactory, ShoppingBasketService) {
 	var self = this;
 
 	self.shoppingBasketService = ShoppingBasketService;
@@ -8,14 +8,11 @@ fashionRetailer.controller('BasketController', ['$http', 'ResourceFactory', 'Sho
 	self.basket = self.shoppingBasketService.basket;
 	self.basketInfo = self.shoppingBasketService.basketInfo;
 	self.flashMessage = 0;
-	self.timeout = $timeout
 
 	self.resourceFactory.query("discountCodes")
 		.then(function(response) {
 			self.discountCodes = response.data;
 		});
-
-	self.timeout( function(){ self.resetFlashMessage(); }, 10000);
 
 	self.addItem = function(item) {
 		if (item.stockQuantity > 0) {
