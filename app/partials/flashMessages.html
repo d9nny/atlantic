@@ -5,6 +5,10 @@
 	</div>
 	<div id="flash-message" ng-show='basketCtrl.activeFlashMessage(2)'>
 		<button ng-click="basketCtrl.resetFlashMessage()"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+		<p>Sorry not enough in stock, <br>more should be in soon.</p>
+	</div>
+	<div id="flash-message" ng-show='basketCtrl.activeFlashMessage(3)'>
+		<button ng-click="basketCtrl.resetFlashMessage()"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
 		<p>Sorry we don't recognise your promo <br>code, please try again.</p>
 	</div>
 </div>

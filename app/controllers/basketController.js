@@ -29,7 +29,7 @@ fashionRetailer.controller('BasketController', ['$http', 'ResourceFactory', 'Sho
 		if ((item.quantity + 1) <= item.stockQuantity) {
 			self.shoppingBasketService.addOne(item);
 		} else {
-			self.flashMessage = 1;
+			self.flashMessage = 2;
 		}
 	};
 
@@ -46,7 +46,7 @@ fashionRetailer.controller('BasketController', ['$http', 'ResourceFactory', 'Sho
 			if (usercode === self.discountCodes[i].code) {
 				self.shoppingBasketService.addDiscount(usercode, self.discountCodes[i]);
 			} else {
-				self.flashMessage = 2;
+				self.flashMessage = 3;
 			}
 		}
 	};

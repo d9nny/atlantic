@@ -34,6 +34,16 @@ describe('Controller: BasketController', function() {
         "stockQuantity": 1,
         "quantity": 1,
         "img": "https://cdnb.lystit.com/photos/3452-2014/09/12/versace-black-gold-button-cardigan-product-1-23517747-1-790845754-normal.jpeg" 
+      },
+      noStockItem = {
+        "name":"Gold Button Cardigan",
+        "category": "Casual",
+        "gender": "Female",
+        "colour": "Black",
+        "price": 167,
+        "stockQuantity": 0,
+        "quantity": 0,
+        "img": "https://cdnb.lystit.com/photos/3452-2014/09/12/versace-black-gold-button-cardigan-product-1-23517747-1-790845754-normal.jpeg" 
       };
 
 
@@ -102,10 +112,25 @@ describe('Controller: BasketController', function() {
   });
 
   describe('Function: addItem', function() {
-  	 it('calls shoppingBasketService.addNewItem() if item has not already been called', function() {
+  	 it('calls shoppingBasketService.addNewItem() if item has not already been added', function() {
       spyOn(mockShoppingBasketService,'addNewItem');
       ctrl.addItem(item);
       expect(mockShoppingBasketService.addNewItem).toHaveBeenCalledWith(item);
+    });
+    it('does not call shoppingBasketService.addNewItem() if item has already been added', function() {
+      spyOn(mockShoppingBasketService,'addNewItem');
+      ctrl.addItem(addedItem);
+      expect(mockShoppingBasketService.addNewItem).not.toHaveBeenCalledWith(addedItem);
+    });
+    it('does not call shoppingBasketService.addNewItem() if there is no stock', function() {
+      spyOn(mockShoppingBasketService,'addNewItem');
+      ctrl.addItem(noStockItem);
+      expect(mockShoppingBasketService.addNewItem).not.toHaveBeenCalledWith(noStockItem);
+    });
+    it('assigns flashMessage to 1 if there is no stock', function() {
+      spyOn(mockShoppingBasketService,'addNewItem');
+      ctrl.addItem(noStockItem);
+      expect(ctrl.flashMessage).toEqual(1);
     });
   }); 
 
@@ -120,6 +145,11 @@ describe('Controller: BasketController', function() {
       ctrl.addOne(lowStockItem);
       expect(mockShoppingBasketService.addOne).not.toHaveBeenCalledWith(lowStockItem);
     });
+    it('assigns flashMessage to 2 if there is not enough stock', function() {
+      spyOn(mockShoppingBasketService,'addOne');
+      ctrl.addOne(lowStockItem);
+      expect(ctrl.flashMessage).toEqual(2);
+    });
   }); 
 
   describe('Function: minusOne', function() {
@@ -128,6 +158,30 @@ describe('Controller: BasketController', function() {
 	    ctrl.minusOne(item);
 	    expect(mockShoppingBasketService.minusOne).toHaveBeenCalledWith(item);
 	  });
+  }); 
+
+  describe('Function: checkDiscount', function() {
+    beforeEach(function() {
+      ctrl.discountCodes = [ {
+        "code": "5OFF",
+        "discount": 5
+      }];
+    });
+     it('calls shoppingBasketService.addDiscount() if code is valid', function() {
+      spyOn(mockShoppingBasketService,'addDiscount');
+      ctrl.checkDiscount('5OFF');
+      expect(mockShoppingBasketService.addDiscount).toHaveBeenCalled();
+    });
+    it('does not call shoppingBasketService.addDiscount() if code is not valid', function() {
+      spyOn(mockShoppingBasketService,'addDiscount');
+      ctrl.checkDiscount('5');
+      expect(mockShoppingBasketService.addDiscount).not.toHaveBeenCalled();
+    });
+    it('assigns flashMessage to 2 if code is not valid', function() {
+      spyOn(mockShoppingBasketService,'addDiscount');
+      ctrl.checkDiscount('5');
+      expect(ctrl.flashMessage).toEqual(3);
+    });
   }); 
 
   describe('Function: update', function() {
