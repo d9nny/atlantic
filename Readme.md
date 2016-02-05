@@ -21,7 +21,7 @@ cart.
 My Approach
 -----------
 
-I decided to use AngularJS as it's a front end case study. I developed a one page application with two controllers, one for the page and one for the shopping basket. I created a service for the basket functions and a factory for the http request to the .json files in assets/resources. I used partials to build the different elements of the page. For the product images I just referenced a url for images found on the internet. To view the products click on a gender and then click on a category. The page is fully responsive to the media size.
+I decided to use AngularJS as it's a front end case study. I developed a one page application with two controllers, one for the page and one for the shopping basket. I created a service for the basket functions and a factory for the http request to the .json files in assets/resources. I used partials to build the different elements of the page. For the product images I just referenced a url for images found on the internet. To view the products click on a gender and then click on a category. To remove an item from the basket, reduce quantity to zero. The page is fully responsive to the media size.
 
 To Do
 -----
