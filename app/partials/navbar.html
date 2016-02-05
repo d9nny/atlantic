@@ -11,10 +11,10 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="#">
-        <img alt="Brand" src="./assets/images/logo.gif">
-      </a>
+				<img alt="Brand" src="./assets/images/logo.gif">
+			</a>
 		</div>
-						<li id='basketIcon' class="nav navbar-nav navbar-right"><a ng-click="pageCtrl.setBasketShow()" href><span class="glyphicon glyphicon-shopping-cart btn-lg" aria-hidden="true"></span></a></li>
+		<li ng-controller="BasketController as basketCtrl" id='basketIcon' class="nav navbar-nav navbar-right"><a ng-click="pageCtrl.setBasketShow()" href>{{basketCtrl.basket.length}}<span class="glyphicon glyphicon-shopping-cart btn-lg" aria-hidden="true"></span></a></li>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">

@@ -15,7 +15,7 @@ body {
 	font-weight: 100;
 	font-size: 15px;
 	margin-top: 6px;
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .navbar {
@@ -36,20 +36,31 @@ body {
 
 #basketIcon {
 	margin-right: 10px;
+	margin-left: 10px;
 }
 
+#basketIcon a {
+	color: #C49A6C;
+	font-size: 15px;
+}
+
+
 .glyphicon-shopping-cart:before {
-   color: #C49A6C;
+	color: #C49A6C;
+}
+
+.glyphicon-shopping-cart {
+	transform: scale(1.4,1.4);
 }
 
 /* Top Section */
 
 #headLogo {
-  margin-top: 75px;
-  text-align: center;
-  border-bottom: 2px solid #C49A6C;
-  border-top: 2px solid #C49A6C;
-  margin-bottom: 30px;
+	margin-top: 75px;
+	text-align: center;
+	border-bottom: 2px solid #C49A6C;
+	border-top: 2px solid #C49A6C;
+	margin-bottom: 30px;
 }
 
 #headLogo img {
@@ -70,10 +81,10 @@ body {
 /* Featured Products */
 
 #featuredProducts {
-  background-color: beige;
-  text-align: center;
-  border-radius: 5px;
-  padding-bottom: 40px;
+	background-color: beige;
+	text-align: center;
+	border-radius: 5px;
+	padding-bottom: 40px;
 }
 
 .nav-pills {
@@ -110,7 +121,7 @@ body {
 }
 
 #products  img {
-  height: inherit;
+	height: inherit;
 }
 
 #productImage {
@@ -160,64 +171,64 @@ body {
 
 /* Basket */
 #basket {
-  background: beige;
-  width: 390px;
-  right: 2%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: 1px solid #D7D2B9;
-  text-align: center;
-  position: fixed;
-  z-index: 1030;
-  top: 50px;
+	background: beige;
+	width: 390px;
+	right: 2%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #D7D2B9;
+	text-align: center;
+	position: fixed;
+	z-index: 1030;
+	top: 50px;
 }
 
 #basket h3 {
-  color: #C79D6E;
-  letter-spacing: 2px;
-  font-family: MS Serif4, New York6, serif;
-  font-weight: 100;
-  font-size: 30px;
+	color: #C79D6E;
+	letter-spacing: 2px;
+	font-family: MS Serif4, New York6, serif;
+	font-weight: 100;
+	font-size: 30px;
 }
 
 .input-group {
-  width: 90%;
-  margin: auto;
+	width: 90%;
+	margin: auto;
 }
 
 #checkCodeBtn {
-  margin-bottom: 25px;
-  color: #C79D6E;
-  background-color: #403D3D;
-  letter-spacing: 1px;
-  font-family: MS Serif4, New York6, serif;
+	margin-bottom: 25px;
+	color: #C79D6E;
+	background-color: #403D3D;
+	letter-spacing: 1px;
+	font-family: MS Serif4, New York6, serif;
 }
 
 #checkoutBtn {
-  width: 300px;
-  margin-bottom: 25px;
-  height: 50px;
-  color: #C79D6E;
-  background-color: #403D3D;
-  font-size: 19px;
-  letter-spacing: 5px;
-  font-family: MS Serif4, New York6, serif;
+	width: 300px;
+	margin-bottom: 25px;
+	height: 50px;
+	color: #C79D6E;
+	background-color: #403D3D;
+	font-size: 19px;
+	letter-spacing: 5px;
+	font-family: MS Serif4, New York6, serif;
 }
 
 #totals {
-  text-align: right;
-  margin-right: 30px;
-  padding-bottom: 15px;
+	text-align: right;
+	margin-right: 30px;
+	padding-bottom: 15px;
 }
 
 #basket td {
- font-size: 10px;
+	font-size: 10px;
 }
 
 #basket th {
- font-size: 12px;
- font-weight: 500;
- letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 2px;
 }
 
 #basket img {
@@ -227,30 +238,30 @@ body {
 /* Flash Messages */
 
 #flash-message > p {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: .5px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #2AE0CD;
-  padding: 10px 20px;
-  text-align: center;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+	font-size: 16px;
+	font-weight: 200;
+	letter-spacing: .5px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #2AE0CD;
+	padding: 10px 20px;
+	text-align: center;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 #flash-message {
-  position: fixed;
-  left: 1%;
-  top: 50px;
-  z-index: 1050;
+	position: fixed;
+	left: 1%;
+	top: 50px;
+	z-index: 1050;
 }
 
 #flash-message button {
-  position: absolute;
-  background-color: #2AE0CD;
-  border: none;
-  right: 0;
-  outline: none;
+	position: absolute;
+	background-color: #2AE0CD;
+	border: none;
+	right: 0;
+	outline: none;
 }
 
 /* Screen Size Settings */
@@ -270,23 +281,19 @@ body {
 
 @media screen and (max-width:970px) {
 	#products {
-    text-align: center;
-    margin: auto;
-    width: 400px;
+		text-align: center;
+		margin: auto;
+		width: 400px;
 	}
 	#product {
-    margin: 10px 0;
+		margin: 10px 0;
 	}
 }
 
 @media screen and (max-width:767px) {
 	#basketIcon {
-    right: 60px;
-    top: -6px;
-    position: absolute;
-	}
-
-	.glyphicon-shopping-cart {
-		transform: scale(1.4,1.4);
+		right: 60px;
+		top: -6px;
+		position: absolute;
 	}
 }

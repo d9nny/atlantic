@@ -26,7 +26,7 @@ I decided to use AngularJS as it's a front end case study. I developed a one pag
 To Do
 -----
 
-More extensive feature tests
+Finish setting up and add feature tests.
 
 Installation
 ------------
@@ -52,7 +52,9 @@ To run unit tests (44 tests):
 ```sh
 $ karma start tests/unit/karma.conf.js
 ```
-To run feature tests ( tests):
+
+
+To run feature tests ( tests): - not finished yet
 
 In one terminal run:
 ```sh
