@@ -17,20 +17,23 @@
 		<script src="app/controllers/basketController.js"></script>
 		<script src="app/services/shoppingBasketService.js"></script>
 		<script src="app/factories/resourceFactory.js"></script>
+		<script src="app/directives/directives.js"></script>
 	</head>
 
 	<body ng-controller="PageController as pageCtrl">
 		
-		<header ng-include="'app/partials/navbar.html'"></header>
+		<header navbar ></header>
 		
 		<div ng-controller="BasketController as basketCtrl">
-			<div ng-include="'app/partials/flashMessages.html'"></div> 
-			<section  ng-show="pageCtrl.basketSelected()" ng-include="'app/partials/basket.html'"></section> 
+
+			<div flash-messages ></div>
+			<section basket ></section> 
+
 		</div>
 		
-		<section ng-include="'app/partials/topSection.html'"></section>
+		<section top-section ></section>
 
-		<section id="featuredProducts" class="container" ng-include="'app/partials/products.html'"></section>
+		<section products ></section>
 
 	</body>
 <html>
