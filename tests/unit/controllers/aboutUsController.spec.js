@@ -1,6 +1,6 @@
 'use strict';
-describe('Controller: PageController', function() {
-  beforeEach(module('FashionRetailer'));
+describe('Controller: AboutUsController', function() {
+  beforeEach(module('Atlantic'));
 
   var mockResourceFactory,
       ctrl,

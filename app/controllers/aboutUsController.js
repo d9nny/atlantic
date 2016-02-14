@@ -1,12 +1,9 @@
 'use strict';
 
-fashionRetailer.controller('PageController', ['$http', 'ResourceFactory', function($http, ResourceFactory) {
+atlantic.controller('HomeController', ['$http', 'ResourceFactory', function($http, ResourceFactory) {
 	var self = this;
 
 	self.resourceFactory = ResourceFactory;
- 	self.activeGender = "Female";
- 	self.activeCategory = "Casual";
- 	self.basketShow = 0;
 
  	self.resourceFactory.query("featuredProducts")
 	  .then(function(response) {

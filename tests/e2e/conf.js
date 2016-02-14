@@ -1,6 +1,6 @@
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['firstFashionFeature.js'],
+  specs: ['aboutUsFeature.js'],
   multiCapabilities: [{
     browserName: 'firefox'
   }, {

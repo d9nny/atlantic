@@ -1,14 +1,13 @@
-describe('First Fashion', function() {
+describe('About Us', function() {
 
   var basket = element(by.id('basketIcon'))
-  var searchButton = element(by.className('btn'))
 
   beforeEach(function() {
-    browser.get('http://localhost:8080');
+    browser.get('http://localhost:5000');
   })
 
   it('has a title', function() {
-    expect(browser.getTitle()).toEqual('First Fashion');
+    expect(browser.getTitle()).toEqual('atlantic');
   });
   describe('opening basket', function(){
   it('clicking on basket icon opens the basket', function() {
