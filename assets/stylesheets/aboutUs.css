@@ -1,50 +1,134 @@
-#left h1 span {
-	font-size: 20px;
-  font-weight: 200;
-  margin-left: 14px;
-  position: absolute;
-	top: 40px;
+#companies-container {
+	height: 600px;
+		background-image: url('http://www.atlanticcreative.co.uk/images/img1502wuji.jpg');
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: 100%;		
 }
 
-#company-card:first-child h1 span {
-	margin-left: 2px;
-}
-
-#company-card{
-	margin: 0;
-	padding: 0;
-}
-
-#left h1 {
-	color: #3D3F3F;
-  font-size: 80px;
-  margin: 0;
-  margin-left: 25px;
+#companies-title {
+	text-align: center;
   padding: 15px;
 }
 
+#companies-title > h1 { 
+  font-size: 4em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  color: #8E8E91;
+}
+
+#company-card {
+	margin: 0;
+	padding: 0;
+	font-family: futura;
+}
+
 #left {
-	background-color: rgba(8, 8, 8, 0.28);
+	cursor: pointer;
+	background-color: rgba(8, 8, 8, 0.8);
+	text-align: center;
+	height: 100px;
+	border-top: 1px solid;
+}
+
+#left h1 {
+	color: #8E8E91;
+    font-size: 4.5em;
+    font-weight: 200;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 12px;
+    left: 45px;
+}
+
+#left h1 span {
+	font-size: 25px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin: 0;
 }
 
 #drop-icon {
 	text-align: center;
+	padding-top: 75px;
 }
 
 #right {
-	height: 300px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 	padding: 30px;
-	background-color: rgba(8, 8, 8, 0.28);
+	background-color: rgba(8, 8, 8, 0.8);
 }
 
 #right h4 {
-	margin-top: 15px;
-	color: #3D3F3F;
+	color: #B3B3B6;
 	padding-bottom: 10px;
+	letter-spacing: 2px;
+	font-size: 22px;
+	font-weight: 500;
+	font-family: futura;
 }
 
-.row {
-	height: 600px;
-	background-color: #FCF8E3;
-	border-radius: 5px;
+#right p {
+	margin: 0 0 10px;
+	color: #ccc;
+	word-spacing: 1px;
+	font-family: futura;
+	font-size: 14px;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width:1000px) {
+	#companies-container {
+		background-image: none;
+	}
+	#right {
+		width: 45%;
+	}
+	#company-card {
+		background-image: url('http://www.atlanticcreative.co.uk/images/img1502wuji.jpg');
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media screen and (max-width:450px) {
+	#companies-container {
+		background-image: none;
+	}
+	#companies-title > h1 { 
+	  font-size: 3em;
+	  left: 5px;
+	}
+	#left h1 span {
+		font-size: 30px;
+	}
+	#left h1  {
+		left: 5px;
+		top: 20px;
+		font-size: 30px;
+	}
+	#left {
+		border-bottom: 1px solid;
+		height: 70px;
+	}
+	#right {
+		border-bottom: 1px solid;
+		padding: 30px;
+		height:100%;
+		width:100%;
+	}
+	#company-card {
+		background-image: url('http://www.atlanticcreative.co.uk/images/img1502wuji.jpg');
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		background-size: 125%;
+	}
 }

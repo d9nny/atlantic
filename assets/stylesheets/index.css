@@ -1,5 +1,5 @@
 body {
-	margin-top: 100px;
+	margin-top: 55px;
 	color: #616262;
 }
 
@@ -10,11 +10,12 @@ body {
 
 /* Navbar */
 
-.navbar-inverse {
-	background-color: rgba(4, 1, 1, 0.76);
+.container-fluid > .navbar-collapse {
+    margin-right: 3%;
+    margin-left: 0;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar.navbar-nav > li > a {
     letter-spacing: 1px;
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-weight: 100;
@@ -28,13 +29,13 @@ body {
 }
 
 a.navbar-title {
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+ font-family: futura;
     font-size: 2em;
-    color: rgb(233, 231, 234);
-    letter-spacing: 0px;
+    color: rgb(108, 107, 108);
+    letter-spacing: 1px;
     position: absolute;
-    top: 4px;
-    left: 35px;
+    top: 7px;
+    left: 3%;
     font-weight: 600;
     text-decoration: none;
     outline: none;
