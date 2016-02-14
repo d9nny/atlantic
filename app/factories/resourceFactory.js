@@ -2,12 +2,10 @@
 
 fashionRetailer.factory('ResourceFactory', ['$http', function($http) {
 
-  var path = './assets/resources/';
-
   return {
-    query: function(type) {
+    query: function(path) {
       return $http({
-        url: path + type + '.json',
+        url: path,
         method: 'GET'
       });
     },

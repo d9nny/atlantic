@@ -10,7 +10,9 @@ var atlantic = angular.module('Atlantic', ['ngResource', 'ngRoute']);
 	        redirectTo: '/aboutUs'
 	      })
 	     	.when('/aboutUs', {
-	        templateUrl: 'app/partials/aboutUs/aboutUs.html'
+	        templateUrl: 'app/partials/aboutUs/aboutUs.html',
+					controller: 'AboutUsController',
+	      	controllerAs: 'aboutCtrl'
 	      })
 	      .when('/ourWork', {
 	        templateUrl: 'app/partials/ourWork/ourWork.html'
@@ -23,8 +25,6 @@ var atlantic = angular.module('Atlantic', ['ngResource', 'ngRoute']);
 	      })
 	      .when('/contactUs', {
 	      	templateUrl: 'app/partials/contactUs/contactUs.html'
-	      //   controller: 'UserController',
-	      //   controllerAs: 'userCtrl'
 	      })
 	      .otherwise({
         redirectTo: '/aboutUs'

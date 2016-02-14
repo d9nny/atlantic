@@ -1,0 +1,14 @@
+<div class="row">
+	<div ng-repeat='company in aboutCtrl.companies' id='company-card' class='col-md-3'>
+		<div id='left' ng-click='aboutCtrl.setCompanyTab(company.number)'>
+			<h1>{{company.number}} <span>{{company.name}}</span></h1>
+		</div>
+		<div id="drop-icon" ng-show='!(aboutCtrl.activeCompanyTab(company.number))'>
+ 			<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+ 		</div>
+		<div id='right' ng-show='aboutCtrl.activeCompanyTab(company.number)'>
+			<h4>{{company.tagLine}}</h4>
+			<P>{{company.description}}</P>
+		</div>
+	</div>
+</div>

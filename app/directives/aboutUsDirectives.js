@@ -1,8 +1,8 @@
-// atlantic.directive('basket', function() {
-// 	return {
-// 		templateUrl: 'app/partials/aboutUs/aboutUs.html'
-// 	};
-// });
+atlantic.directive('companies', function() {
+	return {
+		templateUrl: 'app/partials/aboutUs/companiesLarge.html'
+	};
+});
 
 // atlantic.directive('flashMessages', function() {
 // 	return {
