@@ -3,6 +3,7 @@
 }
 
 .department {
+	margin: 20px 0;
 	position: relative;
 	height: 450px;
 	background-repeat: no-repeat;
@@ -25,7 +26,7 @@
 }
 
 .department:first-child {
-	background-image: url('../images/Office-Design-Inspiration.jpeg');
+	background-image: url('../images/why.jpg');
 }
 
 
@@ -34,8 +35,10 @@
 	background-color: rgba(237, 20, 61, 0.79);
 	float: right;
 }
-.department:nth-child(2) {
-	background-image: url('../images/Office-Design-Inspiration.jpeg');
+.department:nth-child(2)  {
+	background-image: url('../images/branding.jpg');
+  background-size: contain;
+  background-position-x: 30%;
 }
 
 
@@ -44,7 +47,9 @@
 	background-color: rgba(20, 203, 237, 0.79);
 }
 .department:nth-child(3) {
-	background-image: url('../images/Office-Design-Inspiration.jpeg');
+	background-image: url('../images/print.png');
+  background-size: contain;
+  background-position-x: 90%;
 }
 
 
@@ -54,7 +59,8 @@
 	float: right;
 }
 .department:nth-child(4) {
-	background-image: url('../images/Office-Design-Inspiration.jpeg');
+	background-image: url('../images/digital.jpg');
+	background-size: 70%;
 }
 
 
@@ -63,7 +69,9 @@
 	background-color: rgba(237, 224, 20, 0.79);
 }
 .department:nth-child(5) {
-	background-image: url('../images/Office-Design-Inspiration.jpeg');
+	background-image: url('../images/muchu_curve.jpg');
+	background-size: 80%;
+  background-position-x: 100%;
 }
 
 
@@ -73,5 +81,6 @@
 	float: right;
 }
 .department:nth-child(6) {
-	background-image: url('../images/Office-Design-Inspiration.jpeg');
+	background-image: url('../images/shopfit.jpg');
+	background-size: 65%
 }
