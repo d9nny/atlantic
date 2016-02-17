@@ -1,17 +1,10 @@
-	<div id='companies-title'>
-		<h1>How we work</h1>
-	</div>
-<div class="row" id="companies-container">
-	<div ng-repeat='company in aboutCtrl.companies' id='company-card' class='col-md-3'>
-		<div id='left' ng-click='aboutCtrl.setCompanyTab(company.number)'>
-			<h1>{{company.number}} <span>{{company.name}}</span></h1>
-			<div id="drop-icon" ng-show='!(aboutCtrl.activeCompanyTab(company.number))'>
-	 			<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-	 		</div>
-		</div>
-		<div id='right' ng-show='aboutCtrl.activeCompanyTab(company.number)'>
-			<h4>{{company.tagLine}}</h4>
-			<P>{{company.description}}</P>
+<section id='departments'>
+	<div ng-repeat='company in aboutCtrl.companies'>
+		<div class='department'>
+			<div class='depContents' id='{{company.name}}'>
+				<h3>{{company.name}}</h3>
+				<p>{{company.description}}</p>
+			</div>
 		</div>
 	</div>
-</div>
+</section>

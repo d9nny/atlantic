@@ -1,53 +1,46 @@
 body {
 	margin-top: 55px;
-	color: #616262;
+	color: #343535;
+  font-family: futura;
 }
 
 @font-face {
-    font-family: AG-Book;
-    src: url(../fonts/ag-book/AG-Book-Stencil.ttf);
+  font-family: AG-Book;
+  src: url(../fonts/ag-book/AG-Book-Stencil.ttf);
 }
 
 /* Navbar */
 
-.container-fluid > .navbar-collapse {
-    margin-right: 3%;
-    margin-left: 0;
-}
 
 .navbar.navbar-nav > li > a {
-    letter-spacing: 1px;
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    font-weight: 100;
-    font-size: 13px;
-    margin-right: 10px;
+  letter-spacing: 1px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  margin-right: 10px;
 }
 
 .navbar {
 	margin-bottom: 0px;
 	border-bottom-width: 0px;
+  height: 55px;
+}
+
+.container-fluid > .navbar-header {
+  margin-top: 5px;
+  margin-left: 15%;
 }
 
 a.navbar-title {
- font-family: futura;
-    font-size: 2em;
-    color: rgb(108, 107, 108);
-    letter-spacing: 1px;
-    position: absolute;
-    top: 7px;
-    left: 3%;
-    font-weight: 600;
-    text-decoration: none;
-    outline: none;
+  font-size: 2.5em;
+  color: rgb(108, 107, 108);
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-decoration: none;
+  outline: none;
 }
 
-/*
-
-@media screen and (max-width:650px) {
-	.nav-pills {
-		width: 332px;
-		margin: auto;
-	}
+.navbar-nav {
+    margin-left: 40px;
+    margin-top: 3px;
 }
-
-*/
