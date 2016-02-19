@@ -2,10 +2,11 @@
 
 atlantic.controller('AboutUsController', ['$http', function($http) {
 	var self = this;
-  self.activeCompany = 1;
+
   self.companies = [
     {
       'name': 'Why atlantic?',
+      'imageUrl': './../../assets/images/why.jpg',
       'description': "Atlantic Group consists of three individual companies each providing innovative solutions in their own specialist areas. We operate independently or work seamlessly to provide you with a full turnkey solution. Specialists in the food and beverage sector, our client base includes some of the country's best known brands."
     },
     {
@@ -30,12 +31,5 @@ atlantic.controller('AboutUsController', ['$http', function($http) {
     }
   ];
 
-  self.setCompanyTab = function(num) {
-    self.activeCompany = num;
-  };
-
-  self.activeCompanyTab = function(num) {
-    return (self.activeCompany === num);
-  };
-
 }]);
+
