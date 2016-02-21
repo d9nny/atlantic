@@ -1,0 +1,13 @@
+<section id='teamMembers' class="container row">
+	<div ng-repeat='member in aboutCtrl.teamMembers' class='member cold-md-4'>
+		<div class='memImg'>
+			<img ng-src="{{member.imageUrl}}">
+		</div>
+		<div class='memContentsContainer'>
+			<div class='memContents'>
+				<h3>{{member.name}}</h3>
+				<h4>{{member.position}}</h4>
+			</div>
+		</div>
+	</div>
+</section>

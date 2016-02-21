@@ -8,4 +8,9 @@ atlantic.directive('intro', function() {
 		templateUrl: 'app/partials/aboutUs/intro.html'
 	};
 });
+atlantic.directive('team', function() {
+	return {
+		templateUrl: 'app/partials/aboutUs/team.html'
+	};
+});
 

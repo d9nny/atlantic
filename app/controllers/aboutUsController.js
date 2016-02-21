@@ -31,5 +31,38 @@ atlantic.controller('AboutUsController', ['$http', function($http) {
     }
   ];
 
+   self.teamMembers = [
+    {
+      'name': 'Tony Wheeler',
+      'imageUrl': './../../assets/images/tony.jpg',
+      'position': 'Managing Director'
+    },
+    {
+      'name': 'Pindi Bath',
+      'imageUrl': './../../assets/images/pindi.gif',
+      'position': 'Operations Director'
+    },
+    {
+      'name': 'Andrew Criddle',
+      'imageUrl': './../../assets/images/andy.gif',
+      'position': 'Shopfit Director'
+    },
+    {
+      'name': 'Oliver Stokes',
+      'imageUrl': './../../assets/images/oliver.gif',
+      'position': 'Account Director'
+    },
+    {
+      'name': 'Sarah ',
+      'imageUrl': './../../assets/images/sarah.gif',
+      'position': 'Account Director'
+    },
+    {
+      'name': 'Paul',
+      'imageUrl': './../../assets/images/paul.gif',
+      'position': 'Production Manager'
+    }
+  ];
+
 }]);
 
