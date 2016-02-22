@@ -34,32 +34,32 @@ atlantic.controller('AboutUsController', ['$http', function($http) {
    self.teamMembers = [
     {
       'name': 'Tony Wheeler',
-      'imageUrl': './../../assets/images/aboutUs/team/tony.jpg',
+      'imageUrl': './../../assets/images/aboutUs/team/man.jpg',
       'position': 'Managing Director'
     },
     {
       'name': 'Pindi Bath',
-      'imageUrl': './../../assets/images/aboutUs/team/pindi.gif',
+      'imageUrl': './../../assets/images/aboutUs/team/woman.jpg',
       'position': 'Operations Director'
     },
     {
       'name': 'Andrew Criddle',
-      'imageUrl': './../../assets/images/aboutUs/team/andy.gif',
+      'imageUrl': './../../assets/images/aboutUs/team/man.jpg',
       'position': 'Shopfit Director'
     },
     {
       'name': 'Oliver Stokes',
-      'imageUrl': './../../assets/images/aboutUs/team/oliver.gif',
+      'imageUrl': './../../assets/images/aboutUs/team/man.jpg',
       'position': 'Account Director'
     },
     {
-      'name': 'Sarah ',
-      'imageUrl': './../../assets/images/aboutUs/team/sarah.gif',
+      'name': 'Sarah Parks',
+      'imageUrl': './../../assets/images/aboutUs/team/woman.jpg',
       'position': 'Account Director'
     },
     {
-      'name': 'Paul',
-      'imageUrl': './../../assets/images/aboutUs/team/paul.gif',
+      'name': 'Paul Gregory',
+      'imageUrl': './../../assets/images/aboutUs/team/man.jpg',
       'position': 'Production Manager'
     }
   ];

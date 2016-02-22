@@ -4,12 +4,6 @@ body {
   font-family: futura;
 }
 
-
-@media screen and (min-width: 1200px) {
-.container {
-    width: 90%;
-}
-
 /* Navbar */
 
 
@@ -60,11 +54,8 @@ a.navbar-title {
 }
 
 .navbar-toggle {
-  margin-top: 2px;
-  height: 40px;
-  border-radius: 4;
   border: 2px solid white;
-
+  margin-top: 5px; 
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -75,14 +66,14 @@ a.navbar-title {
 
 #socialMediaContainer {
   position: absolute;
-  height: 50px;
-  top: 0;
+  height: 30px;
+  top: 5px;
   right: 50px; 
 }
 
 .socialBtn {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   z-index: 1;
   background-size: cover;
   border: none;
@@ -114,7 +105,7 @@ a.navbar-title {
 
 @media screen and (max-width:765px) {
   #socialMediaContainer {
-    top: 0;
-    right: 65px;
+    top: 8px;
+    right: 70px;
   }
 }
