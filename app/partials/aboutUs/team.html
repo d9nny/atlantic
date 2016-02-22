@@ -1,5 +1,6 @@
-<section id='teamMembers' class="container row">
-	<div ng-repeat='member in aboutCtrl.teamMembers' class='member cold-md-4'>
+<section id='teamMembers' class="row">
+	<div class='container'>
+	<div ng-repeat='member in aboutCtrl.teamMembers' class='member col-md-4'>
 		<div class='memImg'>
 			<img ng-src="{{member.imageUrl}}">
 		</div>
@@ -10,4 +11,5 @@
 			</div>
 		</div>
 	</div>
+</div>
 </section>

@@ -4,6 +4,12 @@ body {
   font-family: futura;
 }
 
+
+@media screen and (min-width: 1200px) {
+.container {
+    width: 90%;
+}
+
 /* Navbar */
 
 
@@ -88,15 +94,15 @@ a.navbar-title {
 }
 
 #facebook {
-  background-image: url('./../images/facebook.gif');
+  background-image: url('./../images/index/socialMedia/facebook.gif');
 }
 
 #twitter {
-  background-image: url('./../images/twitter.gif');
+  background-image: url('./../images/index/socialMedia/twitter.gif');
 }
 
 #pinterest {
-  background-image: url('./../images/pinterest.gif');
+  background-image: url('./../images/index/socialMedia/pinterest.gif');
 }
 
 @media screen and (max-width:960px) {

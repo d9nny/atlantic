@@ -1,7 +1,7 @@
 /* Intro */
 
 #intro  {
-	background-image: url('./../images/intro.gif');
+	background-image: url('./../images/aboutUs/intro/intro.gif');
 	background-color: rgba(4, 4, 4, 0.5);
 	margin-top: -56px;
 	height: 495px;
@@ -58,7 +58,7 @@
 .department {
 	position: relative;
 	height: 450px;
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 .depImg {
@@ -176,4 +176,26 @@ div.department:nth-child(5) > div.depImg {
 		height: 830px;
 		margin-top: 50px;
 	}
+}
+
+/* Team Members */
+
+#teamMembers { 
+	margin-top: 50px;
+}
+
+.member {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.memImg {
+
+}
+.memContentsContainer {
+
+}
+
+.memContents {
+
 }
