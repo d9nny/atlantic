@@ -67,35 +67,35 @@ atlantic.controller('AboutUsController', ['$http', function($http) {
   self.clients = [
     {
       'name': 'Man United',
-      'imageUrl': './../../assets/images/aboutUs/team/manU.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/manU.jpg'
     },
     {
       'name': "Sainsbury's",
-      'imageUrl': './../../assets/images/aboutUs/team/sainsburys.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/sainsburys.jpg'
     },
     {
       'name': 'NEC',
-      'imageUrl': './../../assets/images/aboutUs/team/nec.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/nec.jpg'
     },
     {
       'name': 'Haagen Dazs',
-      'imageUrl': './../../assets/images/aboutUs/team/haagenDazs.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/haagenDazs.jpg'
     },
     {
       'name': 'Old El Paso',
-      'imageUrl': './../../assets/images/aboutUs/team/oldELPaso.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/oldELPaso.jpg'
     },
     {
       'name': 'Exeter University',
-      'imageUrl': './../../assets/images/aboutUs/team/exeterUni.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/exeterUni.jpg'
     },
     {
       'name': 'Wolverhampton University',
-      'imageUrl': './../../assets/images/aboutUs/team/wolverhamptonUni.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/wolverhamptonUni.jpg'
     },
     {
       'name': 'Ellior',
-      'imageUrl': './../../assets/images/aboutUs/team/ellior.jpg'
+      'imageUrl': './../../assets/images/aboutUs/clients/ellior.jpg'
     }
   ];
 
