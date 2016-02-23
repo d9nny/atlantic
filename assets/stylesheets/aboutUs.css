@@ -254,7 +254,6 @@ div.department:nth-child(5) > div.depImg {
 
 #clientsContainer { 
 	margin-top: 50px;
-	background-color: #39E6D2;
   padding: 50px 0;
 }
 
@@ -265,12 +264,16 @@ div.department:nth-child(5) > div.depImg {
 
 #clients {
 	text-align: center;
+	width: 97%;
+	margin: auto;
 }
 
 .client { 
-	display: inline-block;
-	margin: 30px;
-	padding: 20px;
-	background-color: white;
-	text-align: center;
+  display: inline-block;
+  margin: 30px;
+  width: 250px;
+}
+
+.client > img {
+	max-width: 250px;
 }

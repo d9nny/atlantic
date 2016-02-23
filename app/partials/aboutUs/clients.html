@@ -1,19 +1,10 @@
-<section id='clientsContainer' class="row">
+<section id='clientsContainer'>
 	<div class='container'>
 		<h2>Our clients...</h2>
+	</div>
 		<div id='clients'>
 			<div ng-repeat='client in aboutCtrl.clients' class='client'>
-				<div class='clientContainer'>
-					<div class='clientImg'>
-						<img ng-src="{{client.imageUrl}}">
-					</div>
-					<div class='clientContentsContainer'>
-						<div class='clientContents'>
-							<h3>{{client.name}}</h3>
-						</div>
-					</div>
-				</div>
+				<img ng-src="{{client.imageUrl}}">
 			</div>
 		</div>
-	</div>
 </section>
