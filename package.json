@@ -6,6 +6,9 @@
   "directories": {
     "test": "tests"
   },
+  "engines": {
+    "node": "5.0.0"
+  }
   "dependencies": {
     "bower": "^1.6.8",
     "express": "^4.13.3"
