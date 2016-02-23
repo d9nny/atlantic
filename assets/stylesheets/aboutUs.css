@@ -248,3 +248,25 @@ div.department:nth-child(5) > div.depImg {
 	    padding-top: 10px;
 	}
 }
+
+
+/* Clients */
+
+#clients { 
+	margin-top: 50px;
+	background-color: #39E6D2;
+  padding: 50px 0 100px 0;
+}
+
+#clients h2 { 
+	margin-left: 50px;
+	padding-bottom: 50px;	
+}
+
+.client { 
+	display: inline-block;
+	margin: 30px;
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+}

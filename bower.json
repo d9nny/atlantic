@@ -4,12 +4,6 @@
   "authors": [
     "danwheeler <da-wheeler@hotmail.co.uk>"
   ],
-  "scripts": {
-    "postinstall": "bower cache clean && bower install"
-  },
-  "engines": {
-    "node": "0.10.x"
-  },
   "description": "",
   "main": "",
   "moduleType": [],
@@ -22,16 +16,14 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "latest",
-    "bootstrap": "latest",
-    "angular": "latest",
-    "angular-resource": "latest"
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.9",
+    "angular-resource": "~1.4.9"
   },
   "devDependencies": {
-    "angular-mocks": "latest",
-    "angular-route": "latest"
-  },
-  "resolutions": {
-    "angular": "latest"
+    "angular-mocks": "^1.4.9",
+    "angular-route": "^1.4.9"
   }
 }
+

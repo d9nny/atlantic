@@ -13,4 +13,9 @@ atlantic.directive('team', function() {
 		templateUrl: 'app/partials/aboutUs/team.html'
 	};
 });
+atlantic.directive('clients', function() {
+	return {
+		templateUrl: 'app/partials/aboutUs/clients.html'
+	};
+});
 

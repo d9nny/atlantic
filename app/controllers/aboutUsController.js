@@ -64,5 +64,40 @@ atlantic.controller('AboutUsController', ['$http', function($http) {
     }
   ];
 
+  self.clients = [
+    {
+      'name': 'Man United',
+      'imageUrl': './../../assets/images/aboutUs/team/manU.jpg'
+    },
+    {
+      'name': "Sainsbury's",
+      'imageUrl': './../../assets/images/aboutUs/team/sainsburys.jpg'
+    },
+    {
+      'name': 'NEC',
+      'imageUrl': './../../assets/images/aboutUs/team/nec.jpg'
+    },
+    {
+      'name': 'Haagen Dazs',
+      'imageUrl': './../../assets/images/aboutUs/team/haagenDazs.jpg'
+    },
+    {
+      'name': 'Old El Paso',
+      'imageUrl': './../../assets/images/aboutUs/team/oldELPaso.jpg'
+    },
+    {
+      'name': 'Exeter University',
+      'imageUrl': './../../assets/images/aboutUs/team/exeterUni.jpg'
+    },
+    {
+      'name': 'Wolverhampton University',
+      'imageUrl': './../../assets/images/aboutUs/team/wolverhamptonUni.jpg'
+    },
+    {
+      'name': 'Ellior',
+      'imageUrl': './../../assets/images/aboutUs/team/ellior.jpg'
+    }
+  ];
+
 }]);
 
