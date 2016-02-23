@@ -1,7 +1,7 @@
 /* Intro */
 
 #intro  {
-	background-image: url('./../images/aboutUs/intro/intro.gif');
+	background-image: url('./../images/aboutUs/intro/intro.jpg');
 	background-color: rgba(4, 4, 4, 0.5);
 	margin-top: -56px;
 	height: 495px;
@@ -54,14 +54,11 @@
 }
 
 /* companies */
-#departments {
-	margin-top: 50px;
-}
 
 .department {
 	position: relative;
 	height: 450px;
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .depImg {
@@ -205,7 +202,7 @@ div.department:nth-child(5) > div.depImg {
   background-color: rgba(24, 25, 25, 0.86);
   width: 85%;
   margin: auto;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 .memImg > img {

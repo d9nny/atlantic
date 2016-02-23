@@ -37,6 +37,7 @@ body {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #f5f5f5;
   background-color: rgba(0, 15, 0, 0.61);
+  top: -5px;
 }
 
 a.navbar-title {
