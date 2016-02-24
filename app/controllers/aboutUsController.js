@@ -4,6 +4,12 @@ atlantic.controller('AboutUsController', [ 'ResourceFactory', function(ResourceF
 	var self = this;
   self.resourceFactory = ResourceFactory;
 
+
+    self.resourceFactory.query('aboutUs/intro')
+      .then(function(response) {
+        self.intro = response.data;
+      });
+
     self.resourceFactory.query('aboutUs/companies')
       .then(function(response) {
         self.companies = response.data;

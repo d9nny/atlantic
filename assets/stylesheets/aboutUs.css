@@ -1,7 +1,7 @@
 /* Intro */
 
 #intro  {
-	background-image: url('./../images/aboutUs/intro/intro.jpg');
+	/*background-image: url('./../images/aboutUs/intro/intro.jpg');*/
 	background-color: rgba(4, 4, 4, 0.5);
 	margin-top: -56px;
 	height: 495px;
