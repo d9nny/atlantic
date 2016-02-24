@@ -17,12 +17,6 @@ var atlantic = angular.module('Atlantic', ['ngResource', 'ngRoute']);
 	      .when('/ourWork', {
 	        templateUrl: 'app/partials/ourWork/ourWork.html'
 	      })
-	      .when('/clients', {
-	      	templateUrl: 'app/partials/clients/clients.html'
-	      })
-	     	.when('/news', {
-	      	templateUrl: 'app/partials/news/news.html'
-	      })
 	      .when('/contactUs', {
 	      	templateUrl: 'app/partials/contactUs/contactUs.html'
 	      })

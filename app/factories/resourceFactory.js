@@ -1,11 +1,13 @@
 'use strict';
 
-fashionRetailer.factory('ResourceFactory', ['$http', function($http) {
+atlantic.factory('ResourceFactory', ['$http', function($http) {
+
+ var path = './assets/resources/';
 
   return {
-    query: function(path) {
+    query: function(type) {
       return $http({
-        url: path,
+        url: path + type + '.json',
         method: 'GET'
       });
     },
